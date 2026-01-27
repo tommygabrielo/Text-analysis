@@ -1,0 +1,44 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.textarea {
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+  resize: vertical;
+  background-color: #ffffff;
+  color: #000000;
+  transition: border-color 0.2s;
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: #6b46c1;
+}
+
+.button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #6b46c1;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  transition: background-color 0.2s;
+}
+
+.button:disabled,
+.buttonDisabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+  color: #ffffff;
+}
+

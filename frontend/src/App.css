@@ -1,0 +1,127 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+.header {
+  background-color: white;
+  color: black;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.headerContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.nav {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.navButton {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: transparent;
+  color: #000000;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  transition: all 0.2s;
+}
+
+.navButton:hover {
+  background-color: #6b46c1;
+  color: #ffffff;
+  border-color: #6b46c1;
+}
+
+.navButton.active {
+  background-color: #6b46c1;
+  color: #ffffff;
+  border-color: #6b46c1;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  color: #000000;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.main {
+  flex: 1;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  padding: 2rem;
+  background-color: #ffffff;
+}
+
+.error {
+  background-color: #fff5f5;
+  color: #c53030;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border: 1px solid #fc8181;
+  font-family: "Inter", sans-serif;
+}
+
+@media (max-width: 768px) {
+  .headerContent {
+    flex-wrap: wrap;
+  }
+
+  .headerContent .nav {
+    display: none;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .header {
+    padding-bottom: 0;
+  }
+
+  .bottomNav {
+    background-color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .bottomNav .navButton {
+    flex: 1;
+    max-width: 200px;
+  }
+}
+
+@media (min-width: 769px) {
+  .bottomNav {
+    display: none;
+  }
+}
+

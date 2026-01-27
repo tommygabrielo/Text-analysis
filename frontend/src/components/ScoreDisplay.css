@@ -1,0 +1,42 @@
+.container {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #000000;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+
+.score {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  font-family: "Inter", sans-serif;
+}
+
+.scoreHigh {
+  color: #6b46c1;
+}
+
+.scoreMedium {
+  color: #9333ea;
+}
+
+.scoreLow {
+  color: #000000;
+}
+
+.status {
+  font-size: 1rem;
+  color: #000000;
+  font-family: "Inter", sans-serif;
+}
+
