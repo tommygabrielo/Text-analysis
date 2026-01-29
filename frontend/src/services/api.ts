@@ -1,6 +1,6 @@
 import { AnalyzeResponse, HistoryItem } from "../types";
 
-const API_BASE_URL = (import.meta.env.VITE_API_URL as string) || "/api";
+const API_BASE_URL = "https://text-analysis-h7ru.onrender.com/api";
 
 export const analyzeText = async (text: string): Promise<AnalyzeResponse> => {
   const response = await fetch(`${API_BASE_URL}/analyze`, {
